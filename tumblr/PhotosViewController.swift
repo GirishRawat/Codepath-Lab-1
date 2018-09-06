@@ -47,7 +47,7 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tableView.rowHeight = 90
+        self.tableView.rowHeight = 270
         tableView.delegate = self
         tableView.dataSource = self
         fetchImages()

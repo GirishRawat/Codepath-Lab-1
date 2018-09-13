@@ -13,6 +13,7 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
     @IBOutlet weak var tableView: UITableView!
     var posts: [[String: Any]] = []
     
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return posts.count
     }
@@ -32,6 +33,9 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
             // 3.
             let urlString = originalSize["url"] as! String
             // 4.
+            
+            
+            
             let url = URL(string: urlString)
         
             cell.photoView.af_setImage(withURL: url!)
